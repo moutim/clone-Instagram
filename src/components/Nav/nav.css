@@ -1,8 +1,22 @@
 header {
-    width: 18%;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 17%;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    padding-left: 20px;
 }
 
 header div:nth-child(1) img {
-    width: 40%;
+    width: 35%;
+    margin-bottom: 20px;
+}
+
+.box-icones-nav div:nth-child(1) p {
+    font-weight: 800;
+}
+
+.box-icones-nav div:last-child svg {
+    color: #DBDBDB;
 }

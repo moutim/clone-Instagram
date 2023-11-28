@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './navIcon.css';
 
 function NavIcon({ text, img }) {
   return (
-    <div>
+    <div className='nav-icon'>
       <div>
         { img }
       </div>

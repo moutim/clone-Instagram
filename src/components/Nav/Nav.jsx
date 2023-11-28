@@ -6,29 +6,31 @@ import { IoSearchOutline } from 'react-icons/io5';
 import { MdOutlineExplore } from 'react-icons/md';
 import { BiMoviePlay } from 'react-icons/bi';
 import { PiPaperPlaneTilt } from 'react-icons/pi';
-import { FaRegHeart } from 'react-icons/fa';
+import { IoMdHeartEmpty } from 'react-icons/io';
 import { FiPlusSquare } from 'react-icons/fi';
 import { BsThreads } from 'react-icons/bs';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import user from '../../images/user.svg';
+import { FaCircleUser } from 'react-icons/fa6';
 import NavIcon from '../NavIcon/NavIcon';
 
 function Nav() {
   return (
     <header>
       <div>
-        <img src={ logo } alt="Instagram logo" />
-      </div>
+        <div>
+          <img src={ logo } alt="Instagram logo" />
+        </div>
 
-      <div>
-        <NavIcon img={ <GoHomeFill /> } text='Página inicial' />
-        <NavIcon img={ <IoSearchOutline /> } text='Pesquisa' />
-        <NavIcon img={ <MdOutlineExplore /> } text='Explorar' />
-        <NavIcon img={ <BiMoviePlay /> } text='Reels' />
-        <NavIcon img={ <PiPaperPlaneTilt /> } text='Mensagens' />
-        <NavIcon img={ <FaRegHeart /> } text='Notificações' />
-        <NavIcon img={ <FiPlusSquare /> } text='Criar' />
-        <NavIcon img={ <img src={ user } alt="Profile picture" /> } text='Perfil' />
+        <div className='box-icones-nav'>
+          <NavIcon img={ <GoHomeFill /> } text='Página inicial' />
+          <NavIcon img={ <IoSearchOutline /> } text='Pesquisa' />
+          <NavIcon img={ <MdOutlineExplore /> } text='Explorar' />
+          <NavIcon img={ <BiMoviePlay /> } text='Reels' />
+          <NavIcon img={ <PiPaperPlaneTilt /> } text='Mensagens' />
+          <NavIcon img={ <IoMdHeartEmpty /> } text='Notificações' />
+          <NavIcon img={ <FiPlusSquare /> } text='Criar' />
+          <NavIcon img={ <FaCircleUser /> } text='Perfil' />
+        </div>
       </div>
 
       <div>
