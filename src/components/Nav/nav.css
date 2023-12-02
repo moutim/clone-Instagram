@@ -6,6 +6,7 @@ header {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     height: 100vh;
     padding-left: 20px;
+    position: fixed;
 }
 
 header div:nth-child(1) img {
