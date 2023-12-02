@@ -1,5 +1,7 @@
 <h1>Instagram Clone</h1>
 
+![image](https://github.com/moutim/clone-Instagram/assets/88093439/1fd267d6-65fb-4ca5-8529-681b2a55ab1f)
+
   <h2>Descrição</h2>
   <p>Este é um projeto de clone do Instagram desenvolvido usando React, HTML e CSS. O objetivo principal é reproduzir a interface do Instagram, permitindo aos usuários navegar, criar e visualizar postagens, além de interagir por meio de curtidas e comentários.</p>
 
