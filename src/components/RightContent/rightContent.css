@@ -1,0 +1,26 @@
+.right-content {
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.box-sugestao-texto {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+}
+
+.box-sugestao-texto p:nth-child(1) {
+    color: #818181;
+    font-weight: 500;
+}
+
+.box-sugestao-texto p:nth-child(2) {
+    font-size: 12.5px;
+}
+
+.direitos {
+    font-size: 13.5px;
+    color: #CECECE;
+}

@@ -2,7 +2,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 17.5%;
+    /* width: 17.5%; */
+    width: 330px;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     height: 100vh;
     padding-left: 20px;

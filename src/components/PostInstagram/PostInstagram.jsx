@@ -6,18 +6,17 @@ import { FaRegHeart } from 'react-icons/fa';
 import { IoChatbubbleOutline } from 'react-icons/io5';
 import { BsSend } from 'react-icons/bs';
 import './postInstagram.css';
-import user1 from '../../images/user-1.png';
-import post1 from '../../images/post-1.png';
+import PropTypes from 'prop-types';
 
-function PostInstagram() {
+function PostInstagram({ profilePicture, user, postPicture, likes, description }) {
   return (
     <div className='post-instagram'>
       <div className='secao-nome-foto'>
         <div className='nome-foto-perfil'>
           <div className='foto-perfil-postagem'>
-            <img src={ user1 } alt="Foto de perfil" />
+            <img src={ profilePicture } alt="Foto de perfil" />
           </div>
-          <p>flowgamestv</p>
+          <p>{ user }</p>
           <MdVerified className='simbolo-verificado' />
           <BsDot className='simbolo-dot' />
           <p>5 h</p>
@@ -30,7 +29,7 @@ function PostInstagram() {
 
       <div className='imagem-postagem'>
         <div>
-          <img src={ post1 } alt="Imagem da postagem" />
+          <img src={ postPicture } alt="Imagem da postagem" />
         </div>
         <div>
           <FaRegHeart />
@@ -40,8 +39,8 @@ function PostInstagram() {
       </div>
 
       <div className='comentarios-postagem'>
-        <p><span>2.281 curtidas</span></p>
-        <p><span>flowgamestv</span> oh minha gata, morada dos meus sonhos</p>
+        <p><span>{ likes }</span></p>
+        <p><span>{ user }</span> { description }</p>
         <p><span>Ver tradução</span></p>
         <p className='comentario-cor'>Ver todos os 18 comentários</p>
         <p className='comentario-cor'>Adicione um comentário...</p>
@@ -49,5 +48,13 @@ function PostInstagram() {
     </div>
   );
 }
+
+PostInstagram.propTypes = {
+  profilePicture: PropTypes.string.isRequired,
+  postPicture: PropTypes.string.isRequired,
+  user: PropTypes.string.isRequired,
+  likes: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default PostInstagram;

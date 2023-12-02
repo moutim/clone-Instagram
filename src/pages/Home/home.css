@@ -1,3 +1,11 @@
 .home {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-principal {
+    width: 40%;
+    margin: auto;
     display: flex;
 }
