@@ -1,0 +1,13 @@
+main {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.box-stories {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 20%;
+}
